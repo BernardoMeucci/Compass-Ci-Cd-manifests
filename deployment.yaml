@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: hello-fastapi-container
-        image: bernardomeucci/hello-fastapi-app:437efd5470efc5935465238021f4132f4964cc41
+        image: bernardomeucci/hello-fastapi-app:c2040aac227df7f5fea5228d86b333b3071b8a4e
         ports:
         - containerPort: 8000
