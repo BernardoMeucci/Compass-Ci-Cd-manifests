@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: hello-fastapi-container
-        image: SEU_USUARIO_DOCKERHUB/hello-fastapi-app:latest # <--- IMPORTANTE! Altere aqui.
+        image: bernardomeucci/hello-fastapi-app:437efd5470efc5935465238021f4132f4964cc41
         ports:
         - containerPort: 8000
