@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-fastapi-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: hello-fastapi
+  template:
+    metadata:
+      labels:
+        app: hello-fastapi
+    spec:
+      containers:
+      - name: hello-fastapi-container
+        image: SEU_USUARIO_DOCKERHUB/hello-fastapi-app:latest # <--- IMPORTANTE! Altere aqui.
+        ports:
+        - containerPort: 8000
